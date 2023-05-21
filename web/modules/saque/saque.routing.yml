@@ -1,0 +1,15 @@
+saque.saque:
+  path: '/saque'
+  defaults:
+    _title: 'Saque'
+    _form: 'Drupal\saque\Form\SaqueForm'
+  requirements:
+    _permission: 'access content'
+
+saque.saque_resultado:
+  path: '/saque/resultado/{valor_sacado}'
+  defaults:
+    _title: 'Resultado'
+    _controller: 'Drupal\saque\Controller\SaqueController::resultado'
+  requirements:
+    _permission: 'access content'
